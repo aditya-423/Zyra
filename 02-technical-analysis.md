@@ -1,39 +1,38 @@
 # Technical Analysis
 
 ## Technical Outline
-Zyra is an AI-powered trading assistant that converts natural language into blockchain transactions. The system consists of three layers:
+Zyra is an AI-powered trading assistant that transforms natural language into on-chain transactions. Instead of navigating complex dashboards, users type commands like “Buy 500 tokens over 6 hours” and Zyra translates them into executable smart contract actions.  
 
-1. **Frontend** – A React + Vite chat interface with real-time WebSocket messaging. Users type in plain English, and Zyra responds with an interactive preview of the transaction flow (e.g., Swap → Stake → Borrow). Users can edit parameters before confirming.
-2. **Backend / NLP Engine** – A Node.js + Express server integrated with LangGraph for parsing natural language into structured intents. It classifies order types (market, limit, DCA, lending, staking) and builds execution-ready transaction bundles.
-3. **On-Chain Integration** – Zyra uses Zircuit’s EVM-compatible endpoints to sign and execute transactions. Smart contracts (wallet contract, strategy vaults) handle multi-step flows, while the backend coordinates sequencing and error handling.
+The architecture consists of:
+- **Frontend**: React + Vite chat interface with WebSocket support for real-time responses.
+- **Backend/NLP Engine**: Node.js server with LangGraph, parsing natural language into structured intents (market order, limit order, DCA, lending, staking, etc.).
+- **On-Chain Layer**: Custom smart wallet and strategy contracts deployed on Zircuit, executing multi-step transactions with a single confirmation.
 
 ## Technical Novelty
-- **Conversational to On-Chain Execution**: Unlike rule-based trading bots, Zyra natively converts unstructured natural language into composable DeFi transactions, including complex multi-step strategies.
-- **Interactive Transaction Flows**: Users see their strategy as an editable flow of blocks (swap, lend, stake), which is a novel UX not offered by existing DeFi dashboards.
-- **B2B SDK / API Layer**: Zyra exposes its NLP engine via REST and WebSocket APIs, allowing other dApps to embed natural-language trading directly into their platforms without duplicating infrastructure.
-- **Smart Wallet Integration**: Account-abstraction style wallet removes the need for repetitive MetaMask popups, giving a Web2-like seamless experience.
+- **Natural Language → DeFi Execution**: Unlike rule-based bots or trading dashboards, Zyra directly converts conversational input into transaction bundles.  
+- **Interactive Transaction Flows**: Users can view and edit their strategies as modular blocks (swap → stake → borrow), an intuitive UX not found in competitors.  
+- **B2B SDK and API**: Zyra exposes its NLP engine via REST and WebSocket APIs, enabling other dApps to embed natural language trading in their own frontends.  
+- **Smart Wallet Abstraction**: Removes repetitive signature popups by managing flows through delegated smart wallet permissions.
 
 ## Technical Feasibility
-We have already shipped and tested a working MVP:
-- **Core Features**: Transfers, market orders, and limit orders are live and demo-ready.  
-- **Beta Testing**: 15–20 early users validated UX flows during hackathons.  
-- **Integrations**: Successful transaction execution through existing Sei endpoints, which will extend naturally to Zircuit’s low-fee, high-TPS environment.  
-
-The same architecture can support additional DeFi primitives like lending, borrowing, and LP strategies. With modular intent parsing and contract adapters, Zyra is technically feasible to scale into a full multi-strategy platform.
+- **MVP Shipped**: Transfers, market orders, and limit orders have been executed successfully in beta tests with early users.  
+- **Hackathon Validation**: Zyra was demonstrated in multiple hackathon environments, proving feasibility of AI parsing + on-chain execution.  
+- **Modular Design**: New DeFi primitives (lending, staking, bridging) can be added through adapter contracts and parsing modules.  
+- **Security-First Approach**: Smart wallet and strategy contracts are developed with internal QA and slated for external audits before mainnet launch.  
 
 ## Required Infrastructure
-- **Zircuit RPC & Indexers**: For transaction execution, state queries, and analytics.  
-- **Off-Chain Compute**: Node.js backend to run NLP models (LangGraph + LLM API) and manage transaction bundling.  
-- **Database**: MongoDB for chat history, session state, and analytics logging.  
-- **Smart Contracts**: Custom wallet contracts, vaults, and adapters for lending, staking, and liquidity protocols.  
-- **APIs**: Zyra SDK and API endpoints for partner dApps.  
+To run at scale on Zircuit, Zyra requires:
+- **EVM-Compatible RPC Endpoints**: For transaction submission, simulation, and state queries.  
+- **Indexing Layer (Subgraphs/Indexers)**: To fetch user balances, positions, and transaction history for interactive chat responses.  
+- **Low-Latency Execution Environment**: Zircuit’s high throughput and low fees are critical for frequent order splitting (e.g., DCA, TWAP).  
+- **Secure Oracles/Price Feeds**: Needed for limit orders and strategy optimization modules.  
+- **Storage/Analytics Support**: Off-chain infra (MongoDB + backend) to log transaction metadata, while relying on Zircuit for on-chain event emissions.  
 
-## Anticipated Difficulty
-- **Parsing Natural Language Reliably**: Decomposing vague human input into precise DeFi transactions is non-trivial, requiring ongoing fine-tuning.  
-- **Security**: Smart wallet and strategy contracts must pass rigorous audits to avoid vulnerabilities.  
-- **Partner Integration**: Building a generalized SDK that works seamlessly across diverse dApps will require careful abstraction.  
-
-Despite these challenges, Zyra’s modular architecture makes execution realistic within 12 months. We have already solved core intent parsing and transaction execution, so the remaining challenges are incremental rather than foundational.
+## Anticipated Execution Difficulty
+- **Language Reliability**: Parsing ambiguous human input into precise DeFi actions requires iterative NLP refinement.  
+- **Smart Contract Security**: Wallet contracts and multi-step execution flows must undergo rigorous auditing to mitigate risks.  
+- **SDK Standardization**: Abstracting Zyra’s API for multiple partner dApps will require careful design for flexibility without complexity.  
+- **User Adoption**: Transitioning users from familiar dashboards to conversational trading will require education and trust-building.  
 
 ## Conclusion
-Zyra combines AI-driven parsing, account-abstraction wallets, and an SDK-first approach to deliver a new category of DeFi UX: natural language trading. With Zircuit’s high-performance infrastructure, Zyra can provide low-cost, high-speed execution, making conversational trading feasible for both retail users and institutional partners.
+Zyra combines AI-driven intent parsing, smart contract orchestration, and an SDK-first model to redefine how users and dApps interact with DeFi. With Zircuit’s fast, low-cost, and EVM-compatible infrastructure, Zyra can scale both retail-facing chat UX and institutional B2B integrations with natural language execution.
