@@ -1,23 +1,25 @@
-# Instructions
-
-- remove the instructions section when done
-- talk about the team and their experience
-- tell us about the special sauce that will make you successful
-- stay close to the recommended length (0.5 page)
-
-# Team
+# 05. Team
 
 ## Team and Experience
 
-* **Gandalf the Grey – Chief Architect**
-  Gandalf brings deep technical mastery and strategic foresight in decentralized systems architecture, with extensive experience in protocol design, cryptographic security, and blockchain governance. His proven track record in building resilient, trustless solutions is unmatched.
+* **Subh – Project Lead**  
+  Over 10 years in the crypto industry, with 5+ years building DeFi products. Previously at Sperax, TrueFi, TrustToken, and Credit Suisse. Brings deep expertise in protocol design, product scaling, and leading distributed teams.  
+  [LinkedIn](https://www.linkedin.com/in/subhajit1/)
 
-* **Aragorn – Product Lead**
-  Aragorn's leadership and product execution skills are central to the Uniswap V2 vision. With extensive experience leading diverse teams, managing complex projects, and driving user-centric product development, Aragorn ensures disciplined delivery aligned with user needs.
+* **Aditya Yash Raj – Product & Engineering**  
+  Background in Mathematics and Computing. Product and engineering experience at Sperax DAO, where he worked on DEX strategies, liquidity optimization, and analytics. Strong focus on product strategy and growth.  
+  [LinkedIn](https://www.linkedin.com/in/aditya-yash-raj-52561022a/)
 
-* **Legolas – Lead Developer**
-  Legolas combines precise technical execution with exceptional agility in Ethereum smart contract development. Known for meticulous code quality, rapid iteration, and sharp debugging skills, he ensures Uniswap V2’s codebase remains secure, efficient, and reliable.
+* **Druhin Abrol – Smart Contracts & Backend**  
+  Background in Financial Engineering. Experience at Sperax DAO in smart contract development, lending optimizers, and backend infrastructure. Prior internships at Intel, Max Planck Institute, and Aalto University.  
+  [GitHub](https://github.com/D3xter1922)
+
+* **Shreyansh Gaikwad – Smart Contracts & Frontend**  
+  Background in Electronics Engineering. Worked on Sperax DAO frontend and smart contract architecture. Prior internship at Timechain Labs where he built an RWA tokenization platform on BSV.  
+  [GitHub](https://github.com/mr-shreyansh)
 
 ## Special Sauce
 
-The team uniquely combines Gandalf’s visionary protocol expertise, Aragorn’s strategic product execution, and Legolas’s technical precision and agility—forming a resilient, innovative, and efficient unit positioned to revolutionize decentralized exchanges.
+The team combines deep technical expertise in smart contracts, backend, and AI with strong product execution in DeFi. Having already built and shipped products at Sperax and other Web3 projects, we understand both the technical and UX challenges of DeFi.  
+
+Our unique advantage lies in merging **AI-driven natural language interfaces** with **on-chain DeFi execution**. This combination positions Zyra not just as another trading bot, but as the bridge between users, institutions, and DeFi protocols—removing friction and enabling scale where others have failed.
