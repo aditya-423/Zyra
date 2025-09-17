@@ -1,40 +1,42 @@
-# Instructions
-
-- remove the instructions section when done
-- describe the current development state of the project?
-- explaint needs to be done for the successful launch of the project?
-- tell us about your anticipated timeline for the completion? 
-- propose milestones for the grant payout
-    - at most 25% can be used pre-deployment
-    - user adoption and traction-oriented milestones are preferred
-- stay close to the recommended length (1 page)
-
-# Roadmap and Budget
+# 06. Roadmap and Budget
 
 ## Current Development State
 
-Uniswap V2 is currently at the prototype stage, with core smart contract logic defined and preliminary security testing completed in a local environment.
+Zyra is currently at the MVP stage. The product already supports natural-language execution of token transfers, swaps, market orders, and limit orders on-chain. The chat interface and backend parsing logic are functional, and we have completed initial beta testing with early community users.  
+
+Next steps focus on expanding transaction types, integrating a smart wallet for seamless UX, and building out the B2B layer (SDK/API) for protocol adoption.  
 
 ## Tasks Required for Successful Launch
 
-* Full security audits and contract optimization.
-* Final implementation of flash swaps and price oracle functionality.
-* Development and deployment of the front-end user interface.
-* Community outreach, documentation, and initial liquidity seeding.
+* Deploy and test the smart wallet contract to remove friction from signing multiple transactions.  
+* Add new DeFi transaction types (lending, borrowing, staking, bridging) with interactive UI flows.  
+* Release analytics and dashboards to track usage, users, and volume.  
+* Build SDK and API for B2B adoption, enabling other protocols and dApps to embed Zyra.  
+* Deliver complex strategy editor for multi-step, optimized transaction flows.  
+* Prepare Zyra token readiness (tokenomics, audit, launch plan) and mainnet rollout.  
 
 ## Anticipated Timeline
 
-* **Month 1-2:** Final smart contract development and audit.
-* **Month 3:** Front-end integration, comprehensive testing, and mainnet deployment.
-* **Month 4-5:** Community engagement, liquidity incentivization, and user onboarding.
+* **Month 1–2:** Smart wallet integration and public demo.  
+* **Month 3:** Addition of new transaction types (lending, borrowing, staking).  
+* **Month 4:** Analytics and usage dashboards live.  
+* **Month 5–6:** SDK/API release with demo integrations.  
+* **Month 7–9:** Complex strategy editor and multi-step transaction execution.  
+* **Month 10–12:** Token readiness package, audits, mainnet rollout, and partner integration.  
 
 ## Proposed Milestones and Budget
 
-| Milestone                                | Timeline  | Budget Allocation |
-| ---------------------------------------- | --------- | ----------------- |
-| Smart contract audit & test deployment   | Month 1-2 | \$37,500 (25%)    |
-| Mainnet launch & initial liquidity pools | Month 3   | \$30,000 (20%)    |
-| Achieve \$1M liquidity in pools          | Month 4   | \$40,000 (27%)    |
-| Reach \$5M cumulative trading volume     | Month 5   | \$42,500 (28%)    |
+| Milestone                                           | Timeline   | Budget Allocation |
+| -------------------------------------------------   | ---------- | ----------------- |
+| Smart wallet integration (contract + demo flows)    | Month 1–2  | $37,500 (25%)     |
+| New transaction types (lend, borrow, stake, bridge) | Month 3    | $22,500 (15%)     |
+| Analytics dashboard (users, tx, volume)             | Month 4    | $18,000 (12%)     |
+| SDK & API release (demo integrations live)          | Month 5–6  | $22,500 (15%)     |
+| Complex strategy editor (multi-step flows)          | Month 7–9  | $30,000 (20%)     |
+| Token readiness, audit, and mainnet rollout         | Month 10–12| $19,500 (13%)     |
 
-Total Budget: **\$150,000**
+**Total Budget: $150,000**
+
+---
+
+This roadmap ensures smaller early tranches to de-risk execution, with larger back-weighted payouts tied to adoption metrics (SDK integrations, strategy execution, and mainnet readiness).
