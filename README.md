@@ -16,7 +16,7 @@ The primary goal of Zyra is to democratize access to advanced DeFi strategies an
 
 ## Demo Video
 
-👉 [Watch the Zyra MVP Demo](https://youtu.be/Fmnc5gYIick)
+[![Zyra MVP Demo](./Zyra-preview.gif)](https://youtu.be/Fmnc5gYIick)
 
 ## Table of Contents
 
