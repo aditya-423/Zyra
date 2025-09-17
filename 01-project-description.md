@@ -1,29 +1,24 @@
-# Instructions
+# Project Description
 
-- remove the instructions section when done
-- tell us what the goal of the app is, and what problem it solves 
-- relate your project to the closest competitor
-- describe what makes your app unique
-- stay close to the recommended length (1 page)
+## Goal of the App
+Zyra’s goal is to make crypto trading and DeFi accessible to everyone by removing the complexity of manual setup and rigid dashboards. With Zyra, users can type instructions in plain English—such as “Swap 100 USDC for ETH if the price dips below $1,800”—and Zyra executes the strategy securely on-chain. Our vision is to become the unified conversational interface for all DeFi transactions, from simple swaps to complex multi-step strategies.
 
-# 01. Project Description
+## Problem We Solve
+DeFi today is powerful but difficult to use. Even simple actions like setting a limit order or automating a DCA strategy require technical knowledge, multiple apps, and constant monitoring. Advanced strategies like lending → borrowing → staking are nearly impossible for non-technical users. Institutions also face friction due to lack of automation, API-first solutions, and compliance-friendly interfaces. This leads to idle capital, poor execution, and low adoption outside crypto-native circles.
 
-## **Goal and Problem Solved**
+## Closest Competitor
+The closest competitors are platforms like **Bankr.bot** or **Cryptohopper**, which offer trading automation. However, they are primarily off-chain, rule-based bots or clunky dashboards designed for advanced users. They require coding, technical setup, or exchange integration, making them inaccessible for the average user. They also lack composability with DeFi protocols.
 
-Uniswap V2 is a decentralized, Ethereum-based exchange protocol enabling the automated trading of ERC-20 tokens via smart-contract liquidity pools. Users can swap tokens directly without intermediaries, deposit tokens into liquidity pools, and earn fees proportionally. Uniswap V2 extends the automated market maker (AMM) concept, introducing flexible token pairing, flash swaps, and robust on-chain price oracle capabilities.
+## What Makes Zyra Unique
+- **Natural Language UX**: No coding, no complex UI—just chat. Zyra converts plain English into on-chain actions.  
+- **On-Chain Native**: Built directly on Zircuit’s EVM-compatible chain, ensuring transparency, composability, and low fees.  
+- **Interactive Flow Editing**: Transactions are shown as editable steps in the chat interface, letting users tweak amounts, slippage, or sequence before confirming.  
+- **B2B SDK & API**: Institutions and protocols can integrate Zyra into their frontends, enabling their users to transact in natural language without building their own NLP or strategy engine.  
+- **Deflationary Token Model (Future)**: A token that powers advanced strategies, reduces fees, and accrues value via burns and staking.
 
-## **Closest Competitor**
+## Current Status
+- MVP live: supports transfers, market orders, and limit orders.  
+- Beta tested with 15–20 early users during hackathons for UI/UX validation.  
+- Roadmap: adding lending, borrowing, staking, LP allocation, smart wallet integration, and releasing SDK for dApp partners.  
 
-The closest competitor is Bancor, an earlier automated market maker protocol that similarly provides decentralized token trading using liquidity pools and smart contracts. Bancor pioneered the AMM model; however, it requires tokens to be paired with its native token (BNT), introducing additional friction and intermediary dependencies.
-
-## **Unique Differentiators**
-
-* **Token Pair Flexibility:** Unlike Bancor, Uniswap V2 enables liquidity pools consisting of any two ERC-20 tokens directly, without requiring a native intermediary token. This significantly enhances liquidity, usability, and efficiency.
-
-* **Price Oracle Capability:** Uniswap V2 incorporates decentralized on-chain price oracle functionalities, allowing external decentralized applications to securely reference token prices without reliance on off-chain data feeds, enhancing security and composability across DeFi applications.
-
-* **Flash Swaps:** Uniswap V2 introduces flash swaps, allowing developers to borrow tokens instantly and execute arbitrage or refinancing opportunities atomically within a single Ethereum transaction, greatly expanding possibilities for sophisticated decentralized financial strategies.
-
-* **Censorship Resistance and Security:** The decentralized nature of Uniswap V2's smart contracts and liquidity pools eliminates single points of failure and custodial risk, promoting resilience against censorship, hacks, or downtime that traditional centralized exchanges suffer.
-
-Uniswap V2 stands uniquely positioned to be the foundational infrastructure for decentralized token exchanges, promoting open finance innovation and accessibility.
+Zyra turns DeFi from a fragmented, technical experience into something anyone—from retail traders to institutions—can access with a simple conversation.
