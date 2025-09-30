@@ -6,7 +6,7 @@ Zyra is an AI-powered trading assistant that transforms natural language into on
 The architecture consists of:
 - **Frontend**: React + Vite chat interface with WebSocket support for real-time responses.
 - **Backend/NLP Engine**: Node.js server with LangGraph, parsing natural language into structured intents (market order, limit order, DCA, lending, staking, etc.).
-- **On-Chain Layer**: Custom smart wallet and strategy contracts deployed on Zircuit, executing multi-step transactions with a single confirmation.
+- **On-Chain Layer**: Custom smart wallet and strategy contracts deployed on Sei, executing multi-step transactions with a single confirmation.
 
 ## Technical Novelty
 - **Natural Language → DeFi Execution**: Unlike rule-based bots or trading dashboards, Zyra directly converts conversational input into transaction bundles.  
