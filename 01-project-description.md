@@ -11,7 +11,7 @@ The closest competitors are platforms like **Bankr.bot** or **Cryptohopper**, wh
 
 ## What Makes Zyra Unique
 - **Natural Language UX**: No coding, no complex UI—just chat. Zyra converts plain English into on-chain actions.  
-- **On-Chain Native**: Built directly on Zircuit’s EVM-compatible chain, ensuring transparency, composability, and low fees.  
+- **Chain-Agnostic**: Built currently on Sei's EVM-compatible chain, ensuring transparency, composability, and low fees. However, we will be making it chain-agnostic such that it can be easily expanded to all EVM-compatible chains, like Zircuit.
 - **Interactive Flow Editing**: Transactions are shown as editable steps in the chat interface, letting users tweak amounts, slippage, or sequence before confirming.  
 - **B2B SDK & API**: Institutions and protocols can integrate Zyra into their frontends, enabling their users to transact in natural language without building their own NLP or strategy engine.  
 - **Deflationary Token Model (Future)**: A token that powers advanced strategies, reduces fees, and accrues value via burns and staking.
